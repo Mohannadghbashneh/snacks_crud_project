@@ -16,4 +16,4 @@
 - `python manage.py test`
 
 #### Pull Requests
-- [PULL REQUEST LINK]()
+- [PULL REQUEST LINK](https://github.com/Mohannadghbashneh/snacks_crud_project/pull/1)
