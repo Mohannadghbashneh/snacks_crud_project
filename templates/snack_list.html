@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>  Snack Crud Project</h1>
+<h2>Snacks List: </h2>
+
+{% for snack in object_list %}
+<div class="card" id="project-3">
+        <img src="{{snack.img_url}}" alt="{{snack.title}}" width="200px"/>
+        <h3>{{snack.title}}</h3>
+        <a href="{% url 'snack_detail' snack.id%}">Detail</a>
+        <a href="{% url 'snack_update' snack.id%}" id="update_list">Update</a>
+        <a href="{% url 'snack_delete' snack.id%}" id="delete_list">Delete</a>
+      </div>
+    
+{% endfor%}
+<a href="{% url 'snack_create'%}"  id="button1">Create</a>
+{% endblock content %}
